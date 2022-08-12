@@ -1,0 +1,47 @@
+@import "../../../styles.scss";
+
+.assessment-section {
+	.mat-primary {
+		margin: 0 auto;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -1.5rem;
+		margin-right: -1.5rem;
+		li {
+			padding: 1.5rem;
+			border: 1px solid;
+			margin: 0 1.5rem 1.5rem;
+			flex-basis: calc(25% - 3rem);
+			max-width: calc(25% - 3rem);
+			box-sizing: border-box;
+		}
+	}
+	.img-holder {
+		margin: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		.img {
+			position: relative;
+			padding-bottom: 56.25%;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				max-width: 100%;
+			}
+		}
+		figcaption {
+			margin-top: auto;
+			padding-top: 1rem;
+		}
+	}
+}

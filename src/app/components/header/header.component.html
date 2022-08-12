@@ -1,0 +1,8 @@
+<header id="header">
+	<div class="container-fluid">
+		<ul class="main-nav" *ngIf="this.isAdmin">
+			<li><a routerLink="/admin/dashboard" routerLinkActive="active">Admin</a></li>
+		</ul>
+		<button mat-raised-button color="primary" class="log-out" (click)="logOut()">Log out</button>
+	</div>
+</header>

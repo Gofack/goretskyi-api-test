@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+	<ul class="chart-list">
+		<ng-container *ngIf="isAnChart(data.data)">
+			<li *ngFor="let param of data.data.data | keyvalue">
+				<h3>{{ param.key }}</h3>
+				<span class="bar">
+					<span class="progress" [style.width.%]="param.value">
+						<span class="value">{{ toFixedValue(param.value) }}%</span>
+					</span>
+				</span>
+			</li>
+		</ng-container>
+	</ul>
+</div>
+<div mat-dialog-actions>
+	<button mat-button mat-dialog-close>Close</button>
+</div>
